@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Runner Adventure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <!-- CÉU -->
+        <div class="sun"></div>
+
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+
+        <!-- MONTANHAS -->
+        <div class="mountain mountain1"></div>
+        <div class="mountain mountain2"></div>
+
+        <!-- ÁRVORES -->
+        <div class="tree tree1">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+
+        <div class="tree tree2">
+            <div class="trunk"></div>
+            <div class="leaves"></div>
+        </div>
+
+        <!-- HUD -->
+        <div id="hud">
+
+            <div id="score">
+                🏆 Pontos: 0
+            </div>
+
+            <div id="coins">
+                🪙 0
+            </div>
+
+            <div id="lives">
+                ❤️❤️❤️
+            </div>
+
+        </div>
+
+        <!-- JOGADOR -->
+        <div id="player">
+
+            <div class="head"></div>
+
+            <div class="body"></div>
+
+            <div class="leg leg1"></div>
+            <div class="leg leg2"></div>
+
+        </div>
+
+        <!-- CHÃO -->
+        <div id="ground">
+
+            <div class="grass"></div>
+
+        </div>
+
+        <!-- GAME OVER -->
+        <div id="gameOver">
+
+            <h1>GAME OVER</h1>
+
+            <p>
+                Pontuação:
+                <span id="finalScore">0</span>
+            </p>
+
+            <p>
+                Moedas:
+                <span id="finalCoins">0</span>
+            </p>
+
+            <button onclick="restartGame()">
+                🔄 Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
